@@ -1,55 +1,28 @@
-# [HTML5 Boilerplate](http://html5boilerplate.com)
+# Digital BCP
 
-HTML5 Boilerplate is a professional front-end template that helps you build fast, robust, adaptable, and future-proof websites. Spend more time developing and less time reinventing the wheel.
+A sandbox for experiments/learning
 
-This project is the product of many years of iterative development and combined community knowledge. It does not impose a specific development philosophy or framework, so you're free to architect your code in the way that you want.
 
 
 ## Quick start
-
-Clone the git repo - `git clone git://github.com/h5bp/html5-boilerplate.git` - or [download it](https://github.com/h5bp/html5-boilerplate/zipball/master)
-
-
-## Features
-
-* HTML5 ready. Use the new elements with confidence.
-* Cross-browser compatible (Chrome, Opera, Safari, Firefox 3.6+, IE6+).
-* Designed with progressive enhancement in mind.
-* CSS normalizations and common bug fixes.
-* IE-specific classes for easier cross-browser control.
-* A default print stylesheet, performance optimized.
-* Mobile browser optimizations.
-* Protection against any stray `console.log` causing JavaScript errors in IE6/7.
-* The latest jQuery via CDN, with a local fallback.
-* A custom Modernizr build for feature detection.
-* An optimized Google Analytics snippet.
-* Apache server caching, compression, and other configuration defaults for Grade-A performance.
-* Cross-domain Ajax and Flash.
-* "Delete-key friendly." Easy to strip out parts you don't need.
-* Extensive inline and accompanying documentation.
+Clone the git repo
+Run build.py to regenerate index.html
+Modify build.py and src/bcp10.txt to improve the accuracy of the text / formatting
 
 
 ## Contributing
-
-Anyone and everyone is welcome to [contribute](https://github.com/h5bp/html5-boilerplate/wiki/contribute). Hundreds of developers have helped make the HTML5 Boilerplate what it is today.
-
-
-## Project information
-
-* Source: http://github.com/h5bp/html5-boilerplate
-* Web: http://html5boilerplate.com
-* Docs: http://html5boilerplate.com/docs
-* Twitter: http://twitter.com/h5bp
+Contributions welcome. Fork, modify, issue a pull request. My biggest initial concerns are:
 
 
-## License
+## To Do
+* Clean up bcp10.txt (renaming it)
+* A stylesheet to recreate the appearance of the real BCP as nearly as possible
+* Navigation by swiping
+* Links (TOC in navigation bar, page selector)
+* About with license (CC) and credits
 
-### Major components:
+## Sources:
+* [HTML5 Boilerplate](http://html5boilerplate.com)
+* http://justus.anglican.org/resources/bcp/ASCII_1979.htm
 
-* jQuery: MIT/GPL license
-* Modernizr: MIT/BSD license
-* Normalize.css: Public Domain
 
-### Everything else:
-
-The Unlicense (aka: public domain)
