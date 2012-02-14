@@ -6,41 +6,44 @@ Begun 12 Feb 2012
 boidem = {};
 
 boidem.bcp = (function() {
-  var currentPage=0,
-  maxPage=996; 
 
-  var pageNumberSelector = (function(n) {
-    return '#page' + n;
-  });
 
-  var navigateLeftClicked = (function() {
-    if (currentPage > 0) {
+  var pageNumber = (function() {
+    var currentPage = 0,
+      minPage=0,
+      maxPage=966;
+    // TODO get maxPage from DOM (using jquery's last function)
+
+    var pageNumberSelector = (function(n) {
+      return '#page' + n;
+    });
+
+    return {
+    set: function(n) {
+      // ensure n is in legal range
+      n = Math.min(n, maxPage);
+      n = Math.max(n, minPage);
       $(pageNumberSelector(currentPage)).hide();
-      currentPage -= 1;
+      currentPage = n;
       $(pageNumberSelector(currentPage)).show();
       $('#navigationInfo').html('Page ' + currentPage + '/' + maxPage);
-    }
-  });
-
-  var navigateRightClicked = (function() {
-    if (currentPage < maxPage) {
-      $(pageNumberSelector(currentPage)).hide();
-      currentPage += 1;
-      $(pageNumberSelector(currentPage)).show();
-      $('#navigationInfo').html('Page ' + currentPage + '/' + maxPage);
-    }
-  });
-
+    },
+    increment: function() {
+      this.set(currentPage+1);
+    },
+    decrement: function() {
+      this.set(currentPage-1);
+    },
+    toc: 5
+  }}());
+  
   return {
     onDocumentReady:function() {
       $('div.bcp_page').hide();
-      $(pageNumberSelector(currentPage)).show();
-      $('#navigationInfo').html('Page ' + currentPage + '/' + maxPage);
+      pageNumber.set(pageNumber.toc);
 
-      $('#navigateLeft').click(navigateLeftClicked);
-      $('#navigateRight').click(navigateRightClicked);
-
-      // TODO get maxPage from DOM (using jquery's last function)
+      $('#navigateLeft').click(function() { pageNumber.decrement(); } );
+      $('#navigateRight').click(function() { pageNumber.increment(); } );
     }
   }
 }());

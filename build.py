@@ -58,7 +58,6 @@ def main():
         line = scrub(line)
         f.write(line)
     f.write('</div>\n') # close last page
-    addNavigationBar(f)
     getBoilerplateAfterMain(f)
 
 
