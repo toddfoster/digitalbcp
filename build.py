@@ -30,9 +30,11 @@ def findPageNumber(f, line):
   match = re.search(RE_PAGE, line)
   # match returns None (falsy) or MatchObject (truthy)
   if match:
+    f.write('</pre>')
     f.write('<p class="bcp_page_number">{0}</p>\n'.format(int(match.group('pageNumber')) - 1))
     f.write('</div>\n\n')
     f.write('<div class="bcp_page" id="page{0}">\n'.format(match.group('pageNumber')))
+    f.write('<pre>')
   return match
 
 def addNavigationBar(f):
@@ -52,11 +54,13 @@ def main():
     addNavigationBar(f)
     with open(BCP_FILE, 'r') as bcp:
       f.write('<div class="bcp_page" id="page0">')
+      f.write('<pre>')
       for line in bcp:
         if findPageNumber(f, line):
           continue
         line = scrub(line)
         f.write(line)
+    f.write('</pre>')
     f.write('</div>\n') # close last page
     getBoilerplateAfterMain(f)
 

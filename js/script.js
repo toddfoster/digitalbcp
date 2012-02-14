@@ -34,13 +34,14 @@ boidem.bcp = (function() {
     decrement: function() {
       this.set(currentPage-1);
     },
-    toc: 5
+    tableOfContents: 5,
+    titlePage: 3
   }}());
   
   return {
     onDocumentReady:function() {
       $('div.bcp_page').hide();
-      pageNumber.set(pageNumber.toc);
+      pageNumber.set(pageNumber.titlePage);
 
       $('#navigateLeft').click(function() { pageNumber.decrement(); } );
       $('#navigateRight').click(function() { pageNumber.increment(); } );
