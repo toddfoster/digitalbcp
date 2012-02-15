@@ -12,6 +12,7 @@ Modify build.py and src/bcp11.txt to improve the accuracy of the text / formatti
 Contributions welcome. Fork, modify, issue a pull request.
 
 ## To Do
+* Deploy (on github)
 * Clean up bcp11.txt 
 	- fix missing/misplaced/duplicate page numbers
 	- convert to markdown?
