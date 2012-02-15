@@ -5,6 +5,19 @@ Begun 12 Feb 2012
 /* global boidem */
 boidem = {};
 
+boidem.getUrlParameter = function gup(name)
+{
+  // source: http://www.netlobo.com/url_query_string_javascript.html
+  name = name.replace(/[\[]/,"\\\[").replace(/[\]]/,"\\\]");
+  var regexS = "[\\?&]"+name+"=([^&#]*)";
+  var regex = new RegExp( regexS );
+  var results = regex.exec( window.location.href );
+  if( results == null )
+    return "";
+  else
+    return results[1];
+}
+
 boidem.bcp = (function() {
 
 
@@ -41,7 +54,7 @@ boidem.bcp = (function() {
   return {
     onDocumentReady:function() {
       $('div.bcp_page').hide();
-      pageNumber.set(pageNumber.titlePage);
+      pageNumber.set(boidem.getUrlParameter('page') || boidem.getUrlParameter('pg') || pageNumber.titlePage);
 
       $('#navigateLeft').click(function() { pageNumber.decrement(); } );
       $('#navigateRight').click(function() { pageNumber.increment(); } );

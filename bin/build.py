@@ -5,7 +5,7 @@ import re
 OUTPUT_FILE = "index.html";
 BOILERPLATE_FILE = "src/index.html"
 BOILERPLATE_MAIN= '<div role="main">';
-BCP_FILE = "src/bcp10.txt";
+BCP_FILE = "src/bcp11.txt";
 
 RE_PAGE = "^<[Pp]age (?P<pageNumber>\d+)>"
 

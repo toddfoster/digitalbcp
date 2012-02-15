@@ -138,7 +138,7 @@ Charles Mortimer Guilbert
 =Custodian of the Standard Book of Common Prayer=
 September, 1979 
 
-<Page 5> 
+<page 5> 
 
 
 
@@ -258,7 +258,7 @@ Ministration to the Sick   453
 
 Ministration at the Time of Death   462 
 
-<Page 7> 
+<page 7> 
 
 Burial of the Dead: Rite One   469 
 
@@ -1813,7 +1813,7 @@ set before us.  =Daniel 9:9, 10=
 Jesus said, "Whosoever will come after me, let him deny
 himself, and take up his cross, and follow me."  =Mark 8:34= 
 
-<page 38> 
+<page 39> 
 
 
 =Holy Week= 
@@ -2311,6 +2311,7 @@ Blessed are thou in the firmament of heaven; *
 Blessed are thou, O Father, Son, and Holy Spirit; *
  praised and exalted above all for ever.
 
+<page 50>
 
 <Canticle 3>  The Song of Mary  =Magnificat=
 
@@ -2410,7 +2411,7 @@ For mine eyes have seen thy salvation, *
 To be a light to lighten the Gentiles, *
  and to be the glory of thy people Israel.
 
-<page 51>
+<page 52>
 
 Glory to the Father, and to the Son, and to the Holy Spirit: *
  as it was in the beginning, is now, and will be for ever.  Amen.
@@ -2455,6 +2456,7 @@ All the earth doth worship thee, the Father everlasting.
 To thee all Angels cry aloud,
 the Heavens and all the Powers therein.
 To thee Cherubim and Seraphim continually do cry:
+<page 53>
  Holy, holy, holy, Lord God of Sabaoth;
  Heaven and earth are full of the majesty of thy glory.
 
@@ -2541,6 +2543,7 @@ For thine is the kingdom,
  and the power, and the glory,
  for ever and ever.  Amen. 
 
+<page 55>
 
 *Then follows one of these sets of Suffrages* 
 
@@ -2602,7 +2605,7 @@ For thine is the kingdom,
 
 *The Collect of the Day* 
 
-<page 55>
+<page 56>
 
 
 *A Collect for Sundays* 
@@ -2782,7 +2785,7 @@ more than we can ask or imagine:  Glory to him from
 generation to generation in the Church, and in Christ Jesus
 for ever and ever.  =Amen.=  =Ephesians 3:20,21= 
 
-
+<page 61>
 
 <Daily Evening Prayer:  
 Rite One>
@@ -2857,6 +2860,7 @@ Almighty and most merciful Father,
 we have erred and strayed from thy ways like lost sheep,
 we have followed too much the devices and desires of our
 /own hearts,
+<page 63>
 we have offended against thy holy laws,
 we have left undone those things which we ought to
 /have done,
@@ -3182,20 +3186,63 @@ Savior.  =Amen.=
 *A Collect for Aid against Perils*
 
 Lighten our darkness, we beseech thee, O Lord; and by thy
-great mercy defend us from all perils
+great mercy defend us from all perils and dangers of this
+night; for the love of thy only Son, our Savior Jesus Christ.
+=Amen.=
 
 
+*A Collect for Protection*
 
+O God, who art the life of all who live, the light of the faithful,
+the strength of those who labor, and the repose of the dead:
+We thank thee for the timely blessings of the day, and humbly
+beseech thy merciful protection all the night. Bring us, we
+pray thee, in safety to the morning hours; through him who
+died for us and rose again, thy Son our Savior Jesus Christ.
+=Amen.=
+
+
+*A Collect for the Presence of Christ*
+
+Lord Jesus, stay with us, for evening is at hand and the day
+is past; be our companion in the way, kindle our hearts, ad
+awaken hope, that we may know thee as thou art revealed in
+Scripture and the breaking of bread. Grant this for the sake
+of thy love. =Amen.=
 
 
 *Then, unless the Eucharist or a form of general intercession is to 
 follow, one of these prayers for mission is added* 
 
+O God and Father of all, whom the whole heavens adore:
+Let the whole earth also worship thee, all nations obey thee,
+all tongues confess and bless thee, and men and women every-
+where love thee and serve thee in peace; through Jesus Christ
+our Lord. =Amen.=
 
+*or the following*
+
+
+<page 71>
+
+
+Keep watch, dear Lord, with those who work, or watch, or
+weep this night, and give thine angels charge over those who
+sleep. Tend the sick, Lord Christ; give rest to the weary, bless
+the dying, soothe the suffering, pity the afflicted, shield the
+joyous; and all for thy love's sake. =Amen.=
+
+*or this*
+
+O God, who dost manifest in thy servants the signs of thy
+presence: Send forth upon us the Spirit of love, that in
+companionship with one another thine abounding grace may
+increase among us; through Jesus Christ our Lord. =Amen.=
 
 *Here may be sung a hymn or anthem.* 
 
 *Authorized intercessions and thanksgivings may follow.* 
+
 
 
 *Before the close of the Office one or both of the following may be  
@@ -3931,6 +3978,7 @@ Glorify the Lord, O chill and cold, *
 Frost and cold, ice and sleet, glorify the Lord, *
  praise him and highly exalt him for ever. 
 
+<page 89>
 
 Glorify the Lord, O nights and days, *
  O shining light and enfolding dark. 
@@ -5035,6 +5083,8 @@ hilaron may be followed by the Lord's Prayer and a grace or blessing;*
 *Or, it may continue as a complete evening Office with the following
 elements:* 
 
+<page 113>
+
 <Selection from the Psalter.>  *Silence, or a suitable Collect, or both,
 may follow the Psalmody.* 
 
@@ -5219,6 +5269,7 @@ it was in the beginning, is now, and will be for ever.  Amen.
 *The following, or some other suitable hymn, or an Invitatory Psalm, may
 be sung or said.* 
 
+<page 118>
 
 <O Gracious Light>  =Phos hilaron= 
 
@@ -9586,7 +9637,7 @@ the Holy Spirit, one God, in glory everlasting.  =Amen.=
 
 *Preface of the Ascension* 
 
-<Page 227> 
+<page 227> 
 
 
 <The Day of Pentecost:  Whitsunday>
@@ -9626,7 +9677,7 @@ most closely to the date of Pentecost in that year is used.  See page
 *Wednesday, Friday, and Saturday of this week are the traditional summer
 Ember Days.* 
 
-<Page 228> 
+<page 228> 
 
 
 <First Sunday after Pentecost:  Trinity Sunday>
@@ -11825,8 +11876,6 @@ one God, for ever and ever.  =Amen.=
 the Anthem "In the midst of life" (page 484 or 492) is sung or said.* 
 
 *The service then concludes with the Lord's Prayer and the Grace.* 
-
-<page 283> 
 
 <page 284> 
 
@@ -14875,7 +14924,7 @@ The peace of the Lord be always with you.
 *Then the Ministers and People may greet one another in the name of the 
 Lord.*
 
-<page 363>
+<page 361>
 
 
 <The Holy Communion>
@@ -16525,7 +16574,7 @@ our Lord.  =Amen.=
 Let us bless the Lord.
 =Thanks be to God.=
 
-<Page 400>
+<page 400>
 
 
 
@@ -16707,7 +16756,7 @@ Holy, Holy, Holy Lord, God of power and might,
 *The Celebrant now praises God for the salvation of the world through 
 Jesus Christ our Lord.*
 
-<Page 405>
+<page 405>
 
 *At the following words concerning the bread, the Celebrant is to hold 
 it, or to lay a hand upon it; and at the words concerning the cup, to 
@@ -17554,7 +17603,7 @@ that I am, and all that I have, I honor you, in the Name of
 the Father, and of the Son, and of the Holy Spirit (*or* in the 
 Name of God).
 
-<Page 428>
+<page 428>
 
 *Then the Celebrant joins the right hands of husband and wife and says*
 
@@ -19418,7 +19467,7 @@ but the night is as clear as day; *
 *After the New Testament Lesson, a suitable canticle or hymn, or one of 
 the following Psalms may be sung or said*
 
-<Page 476>
+<page 476>
 
 
 <Psalm 23>  =Dominus regit me=
