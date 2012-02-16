@@ -1,30 +1,14 @@
 #!/usr/bin/env python
 
+# NOTES
+# div's all default to hidden
+
 import re
 
-OUTPUT_FILE = "index.html";
-BOILERPLATE_FILE = "src/index.html"
-BOILERPLATE_MAIN= '<div role="main">';
-BCP_FILE = "src/bcp11.txt";
+OUTPUT_FILE = "bcp.html";
+INPUT_FILE = "bcp11.txt";
 
 RE_PAGE = "^<[Pp]age (?P<pageNumber>\d+)>"
-
-def getBoilerplateBeforeMain(f):
-  with open(BOILERPLATE_FILE, 'r') as b:
-    for line in b:
-      # TODO: modify headers, title, etc.
-      f.write(line)
-      if BOILERPLATE_MAIN in line:
-        break
-
-
-def getBoilerplateAfterMain(f):
-  with open(BOILERPLATE_FILE, 'r') as b:
-    line = b.readline()
-    while not BOILERPLATE_MAIN in line:
-      line = b.readline()
-    for line in b:
-      f.write(line)
 
 def findPageNumber(f, line):
   match = re.search(RE_PAGE, line)
@@ -33,7 +17,7 @@ def findPageNumber(f, line):
     f.write('</pre>')
     f.write('<p class="bcp_page_number">{0}</p>\n'.format(int(match.group('pageNumber')) - 1))
     f.write('</div>\n\n')
-    f.write('<div class="bcp_page" id="page{0}">\n'.format(match.group('pageNumber')))
+    f.write('<div class="bcp_page" id="page{0}" style="display:none;">\n'.format(match.group('pageNumber')))
     f.write('<pre>')
   return match
 
@@ -46,14 +30,10 @@ def scrub(line):
   return line.translate(None, "<>")
 
 def main():
-  # TODO: Check for existence of input files
-
   with open(OUTPUT_FILE, 'w') as f:
-    getBoilerplateBeforeMain(f)
-
     addNavigationBar(f)
-    with open(BCP_FILE, 'r') as bcp:
-      f.write('<div class="bcp_page" id="page0">')
+    with open(INPUT_FILE, 'r') as bcp:
+      f.write('<div class="bcp_page" id="page0" style="display:none;">')
       f.write('<pre>')
       for line in bcp:
         if findPageNumber(f, line):
@@ -62,7 +42,6 @@ def main():
         f.write(line)
     f.write('</pre>')
     f.write('</div>\n') # close last page
-    getBoilerplateAfterMain(f)
 
 
 if __name__ == "__main__":

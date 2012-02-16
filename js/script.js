@@ -50,14 +50,17 @@ boidem.bcp = (function() {
     tableOfContents: 5,
     titlePage: 3
   }}());
+
+  var loadFinished = (function() {
+      pageNumber.set(boidem.getUrlParameter('page') || boidem.getUrlParameter('pg') || pageNumber.titlePage);
+      $('#navigateLeft').click(function() { pageNumber.decrement(); } );
+      $('#navigateRight').click(function() { pageNumber.increment(); } );
+  });
   
   return {
     onDocumentReady:function() {
-      $('div.bcp_page').hide();
-      pageNumber.set(boidem.getUrlParameter('page') || boidem.getUrlParameter('pg') || pageNumber.titlePage);
-
-      $('#navigateLeft').click(function() { pageNumber.decrement(); } );
-      $('#navigateRight').click(function() { pageNumber.increment(); } );
+      $('div').html("Loading the BCP...");
+      $('div').load('bcp.html', loadFinished);
     }
   }
 }());
