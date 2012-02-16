@@ -61,6 +61,7 @@ boidem.bcp = (function() {
     onDocumentReady:function() {
       $('div').html("Loading the BCP...");
       $('div').load('bcp.html', loadFinished);
+      $(document).attr("title", "BCP");
     }
   }
 }());
