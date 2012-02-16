@@ -55,13 +55,16 @@ boidem.bcp = (function() {
       pageNumber.set(boidem.getUrlParameter('page') || boidem.getUrlParameter('pg') || pageNumber.titlePage);
       $('#navigateLeft').click(function() { pageNumber.decrement(); } );
       $('#navigateRight').click(function() { pageNumber.increment(); } );
+
+      // reset URL
+      window.history.pushState({},"", window.location.href.slice(0,window.location.href.indexOf('?')));
   });
   
   return {
     onDocumentReady:function() {
+      $(document).attr("title", "BCP");
       $('div').html("Loading the BCP...");
       $('div').load('bcp.html', loadFinished);
-      $(document).attr("title", "BCP");
     }
   }
 }());
