@@ -19,13 +19,13 @@ boidem.getUrlParameter = function gup(name)
 }
 
 boidem.bcp = (function() {
-
-
   var pageNumber = (function() {
     var currentPage = 0,
       minPage=0,
       maxPage=966;
     // TODO get maxPage from DOM (using jquery's last function)
+
+    var lawnchair = Lawnchair({name:'boidem.bcp.pageNumber', record:'pageNumber'}, function() { });
 
     var pageNumberSelector = (function(n) {
       return '#page' + n;
@@ -33,6 +33,10 @@ boidem.bcp = (function() {
 
     return {
     set: function(n) {
+      if (!n) {
+        lawnchair.get('pageNumber', function(p) { if (p) pageNumber.set(p.value); });
+        return;
+      }
       // ensure n is in legal range
       n = Math.min(n, maxPage);
       n = Math.max(n, minPage);
@@ -40,6 +44,7 @@ boidem.bcp = (function() {
       currentPage = n;
       $(pageNumberSelector(currentPage)).show();
       $('#navigationInfo').html('Page ' + currentPage + '/' + maxPage);
+      lawnchair.save({key:'pageNumber', value:currentPage});
     },
     increment: function() {
       this.set(currentPage+1);
@@ -52,12 +57,15 @@ boidem.bcp = (function() {
   }}());
 
   var loadFinished = (function() {
-      pageNumber.set(boidem.getUrlParameter('page') || boidem.getUrlParameter('pg') || pageNumber.titlePage);
+      pageNumber.set(boidem.getUrlParameter('page') || boidem.getUrlParameter('pg'));
+     
       $('#navigateLeft').click(function() { pageNumber.decrement(); } );
       $('#navigateRight').click(function() { pageNumber.increment(); } );
 
       // reset URL
-      window.history.pushState({},"", window.location.href.slice(0,window.location.href.indexOf('?')));
+      var url = window.location.href;
+      if (url.indexOf('?')>0) 
+        window.history.pushState({},"", window.location.href.slice(0,window.location.href.indexOf('?')));
   });
   
   return {
