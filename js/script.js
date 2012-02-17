@@ -34,7 +34,7 @@ boidem.bcp = (function() {
     return {
     set: function(n) {
       if (!n) {
-        lawnchair.get('pageNumber', function(p) { if (p) pageNumber.set(p.value); });
+        lawnchair.get('pageNumber', function(p) { pageNumber.set(p ? p.value : pageNumber.titlePage); });
         return;
       }
       // ensure n is in legal range

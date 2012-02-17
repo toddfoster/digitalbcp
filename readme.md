@@ -12,11 +12,22 @@ Modify build.py and bcp11.txt to improve the accuracy of the text / formatting
 Contributions welcome. Fork, modify, issue a pull request.
 
 ## To Do
-* Deploy (on github)
+### General
+* Deploy with digitalbcp.org
 * Clean up bcp11.txt 
+	- investigate getting a fresh RTF (corrected) and parsing it out
 	- fix missing/misplaced/duplicate page numbers
 	- convert to markdown?
 	- Remove/modify header per instructions
+* Icon
+* Bug report email
+
+### build.py
+* page face attribute
+* assemble/minify/gzip plugins.js, scripts.js
+
+
+### javascript / html / css
 * A stylesheet to recreate the appearance of the real BCP as nearly as possible
 * Floating navigation bar
 	- images instead of hacky form buttons
@@ -28,7 +39,7 @@ Contributions welcome. Fork, modify, issue a pull request.
 * About with license (CC) and credits (page 0, only accessible via direct link)
 * Navigation by swiping
 * Provide links for bookmarking parameters
-* Icon
+* Better MVC separation?
 
 ## Features
 * Go directly to page with ?page=n parameter in url
